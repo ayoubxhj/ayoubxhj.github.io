@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayoub hj</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>AyoubxHj Portfolio</title>
 </head>
-
 <body>
+
     <header>
-        <!--Header Content-->
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 style="font-family: cursive;font-size: 40px;">Med Ayoub Haj Amor</h1>
+        </div>
     </header>
 
-    <main>
-        <!--Main content Section-->
-        
-	<!--Home Section-->
-        <section>
-            <h1>I am Ayoub,<br>A developer.</h1>
-        </section>
-	<!--Skills Section-->
-	<section>
-		Python HTML CSS Javascript SQL Linux Git  
-	</section>
-	
-	<!--Projects Section-->
-	<section></section>
-    </main>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <hr>
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I am a passionate developer with expertise in web Development, web Scraping ...</p>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li><img src="rc/skills/py.png" alt="Python"></li>
+            <li><img src="rc/skills/html.png" alt="HTML"></li>
+            <li><img src="rc/skills/css.png" alt="CSS"></li>
+            <li><img src="rc/skills/js.png" alt="JavaScript"></li>
+            <li><img src="rc/skills/archlinux.png" alt="Arch Linux"></li>
+            <li><img src="rc/skills/git.png" alt="Git"></li>
+            <!-- Add more skills as needed -->
+        </ul>
+    </section>
+
+    <section id="projects" class="container">
+    <h2>Projects</h2>
+    <ul class="projects-list">
+        <li>
+            <div class="project-box">
+                <h3>MemoJi - Emoji Memory Game</h3>
+                <p>A memory game featuring emojis. Test your memory skills with this fun and engaging game.</p>
+                <a href="https://github.com/usrayb444/MemoJi.git" target="_blank">View on GitHub</a>
+            </div>
+        </li>
+        <!-- Add more projects in a similar manner -->
+    </ul>
+</section>
+
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me via email at <a href="mailto:ayoubxhj@outlook.com">ayoubxhj@outlook.com</a>.</p>
+    </section>
+
     <footer>
-	    <!--Footer content goes here-->
-	    <div><img src=""></div>
-	    <div><img src=""></div>
-	    <div><img src=""></div>
+        <div class="container">
+            <p>&copy; 2024 AyoubxHj Portfolio. All rights reserved.</p>
+        </div>
     </footer>
 
 </body>
-
 </html>
