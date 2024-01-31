@@ -17,8 +17,6 @@ header {
     padding: 40px 0;
 }
 
-
-
 nav ul {
     list-style: none;
     display: flex;
@@ -43,6 +41,7 @@ nav a {
 nav a:hover {
     color: #ffcc00; /* Change the color on hover */
 }
+
 section {
     margin-bottom: 40px;
 }
@@ -56,6 +55,7 @@ h2 {
     padding: 0;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* Allow skills images to wrap onto the next line */
 }
 
 .skills-list li {
@@ -66,16 +66,15 @@ h2 {
     width: 60px;
     height: 60px;
     margin: 10px;
-    filter:grayscale(100%);
+    filter: grayscale(100%);
     transition: transform 0.5s ease-in-out;
 }
 
 .skills-list img:hover {
-    filter:grayscale(0%);
+    filter: grayscale(0%);
     transform: scale(1.1);
-    transition:0.5s;
+    transition: 0.5s;
 }
-
 
 footer {
     background-color: #333;
@@ -83,7 +82,6 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
-
 
 .projects-list {
     list-style: none;
@@ -116,7 +114,6 @@ footer {
     margin-bottom: 20px;
 }
 
-
 .project-box a {
     color: #007bff;
     text-decoration: none;
@@ -129,4 +126,34 @@ footer {
     border-color: #007bff;
 }
 
+@media screen and (max-width: 600px) {
+    header {
+        padding: 20px 0;
+    }
 
+    nav ul {
+        padding: 10px 0;
+    }
+
+    nav li {
+        margin: 0 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .skills-list img {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+
+    section#contact a {
+        padding: 8px 15px;
+    }
+}
